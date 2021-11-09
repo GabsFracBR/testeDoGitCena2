@@ -1,0 +1,174 @@
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Gabriel Romenski">
+    <title>Urasco - Cadastro</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/checkout/">    
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="../css/cadastro.css" rel="stylesheet">
+
+  </head>
+
+  <body class="bg-light">
+    
+  <div class="container">
+    <main>
+      <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="../images/logo.png" alt="" width="128" height="128">
+        <h2>Cadastro</h2>
+      </div>
+
+      <div class="row g-5">
+        <div class="col-lg-12">
+          <form class="needs-validation" novalidate action="../index.html">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">Primeiro Nome</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Primeiro Nome" value="" required>
+                <div class="invalid-feedback">
+                  É necessário colocar um nome!
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Último Nome</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Último nome" value="" required>
+                <div class="invalid-feedback">
+                  É necessário colocar um nome!
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="username" class="form-label">Username</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text">@</span>
+                  <input type="text" class="form-control" id="username" placeholder="Username" required>
+                <div class="invalid-feedback">
+                    Seu Username é necessário!
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="senha" class="form-label">Senha</label>
+                <div class="input-group has-validation">
+                  <input type="password" class="form-control" id="senha" placeholder="Senha" required>
+                <div class="invalid-feedback">
+                    Digite uma senha!
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="senha" class="form-label">Confirmar Senha</label>
+                <div class="input-group has-validation">
+                  <input type="password" class="form-control" id="confirmarsenha" placeholder="Confirmar Senha" required>
+                <div class="invalid-feedback">
+                    Digite uma senha!
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="email" class="form-label">Email <span class="text-muted">(Opcional)</span></label>
+                <input type="email" class="form-control" id="email" placeholder="voce@example.com">
+                <div class="invalid-feedback">
+                  Por favor forneça um email válido!
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="address" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="address" placeholder="1234 Rua principal" required>
+                <div class="invalid-feedback">
+                  Por favor insira seu endereço
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="address2" class="form-label">Segundo Endereço <span class="text-muted">(Opcional)</span></label>
+                <input type="text" class="form-control" id="address2" placeholder="Numero do Apartamento ou Suite">
+              </div>
+
+              <div class="col-md-6">
+                <label for="country" class="form-label">País</label>
+                <!-- Escolha dos países -->
+                <select class="form-select" id="country" required>
+                  <option value="">Escolha...</option>
+                  <option>Brasil</option>
+                </select>
+
+                <div class="invalid-feedback">
+                  Por favor Selecione seu País!
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="state" class="form-label">Estado</label>
+                <!-- Escolha dos estados -->
+                <select class="form-select" id="state" required>
+                  <option value="">Escolha...</option>
+                  <option>AC</option>
+                  <option>AL</option>
+                  <option>AP</option>
+                  <option>AM</option>
+                  <option>BA</option>
+                  <option>CE</option>
+                  <option>ES</option>
+                  <option>GO</option>
+                  <option>MA</option>
+                  <option>MT</option>
+                  <option>MS</option>
+                  <option>MG</option>
+                  <option>PA</option>
+                  <option>PB</option>
+                  <option>PR</option>
+                  <option>PE</option>
+                  <option>PI</option>
+                  <option>RJ</option>
+                  <option>RN</option>
+                  <option>RS</option>
+                  <option>RO</option>
+                  <option>RR</option>
+                  <option>SC</option>
+                  <option>SP</option>
+                  <option>SE</option>
+                  <option>TO</option>
+                  <option>DF</option>
+                </select>
+                <div class="invalid-feedback">
+                  Por favor insira seu estado!
+                </div>
+              </div>
+
+            </div>
+
+            <p></p>
+
+            <div class="col-lg-12 text-center">
+              <button class="btn btn-primary btn-lg" type="submit">Cadastrar</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1">&copy; 2021</p>
+    </footer>
+
+  </div>
+
+  <!-- Javascript -->
+  <script src="../javascript/form-validation.js"></script>
+
+</body>
+</html>

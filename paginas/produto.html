@@ -1,0 +1,436 @@
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Gabriel Romenski">
+    <title>Urasco - Produtos</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/product/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link href="../css/produto.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="div-cabecalho">
+      Produtos
+    </div>
+    
+    <div class="container">
+
+      <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+
+        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+          <img class="logo_img" src="../images/logo.png">
+        </a>
+
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="../index.html" class="nav-link px-2 link-dark">Início</a></li>
+          <li><a href="#" class="nav-link px-2 link-secondary">Produtos</a></li>
+          <li><a href="carrinho.html" class="nav-link px-2 link-dark">Carrinho</a></li>
+        </ul>
+
+        <div class="col-md-3 text-end">
+          <a href="login.html"><img class="image-Login" src="../images/iconeLogin.png"></a>
+          <a href="carrinho.html"><img class="image-Login" src="../images/iconeCarrinho.png"></a>
+        </div>
+
+      </header>
+
+      <!-- Mensagem inicial -->
+      <div class="position-relative overflow-hidden p-2 p-md-5 m-md-3 text-center bg-light">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+          <h1 class="display-4 fw-normal">Lista de todos os nosso produtos</h1>
+          <p class="lead fw-normal">Fique atento aos próximos produtos que vão entrar em nosso catálogo</p>
+          <a class="btn btn-outline-secondary" href="#">Em breve...</a>
+          <!--<button class="button-buy" onclick="limpaStorage()">LIMPAR</button>-->
+        </div>
+      </div>
+
+      <!-- Produto 1 -->
+      <div id="produtos">
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+          <div class="bg-light me-md-3 pt-3 px-3 pt-md-6 px-md-5 text-center overflow-hidden">
+            <div class="my-8 py-3">
+              <h2 class="display-5">Amarige</h2>
+              <p class="lead">75ml</p>
+              <p class="lead">R$119,90</p>
+            </div>
+
+            <div class="bg-dark shadow-sm mx-auto" style = "width: 100%; height: 400px; border-radius: 21px;">
+              <img src="../images/produtos/Amarige.png" style="max-width: 100%; height: 100%;">
+            </div>
+
+            <button id="button-comprar" class="button-buy" onclick="comprar(0)">Comprar</button>
+          </div>
+
+          <!-- Produto 2 -->
+          <div class="bg-light me-md-3 pt-3 px-3 pt-md-6 px-md-5 text-center overflow-hidden">
+            <div class="my-8 p-3">
+              <h2 class="display-5">Amburana</h2>
+              <p class="lead">35ml</p>
+              <p class="lead">R$79,90</p>
+            </div>
+
+            <div class="bg-dark shadow-sm mx-auto" style="width: 100%; height: 400px; border-radius: 21px;">
+              <img src="../images/produtos/Amburana.png" style="max-width: 100%; height: 100%;">
+            </div>
+
+            <button id="button-comprar" class="button-buy" onclick="comprar(1)">Comprar</button>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Produto 3 -->
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-6 px-md-5 text-center overflow-hidden">
+          <div class="my-8 p-3">
+            <h2 class="display-5">CoffeeWoman</h2>
+            <p class="lead">125ml</p>
+            <p class="lead">R$149,90</p>
+          </div>
+
+          <div class="bg-dark shadow-sm mx-auto" style="width: 100%; height: 400px; border-radius: 21px;">
+            <img src="../images/produtos/CoffeeWoman.png" style="max-width: 100%; height: 100%;">
+          </div>
+
+          <button id="button-comprar" class="button-buy" onclick="comprar(2)">Comprar</button>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-6 px-md-5 text-center overflow-hidden">
+          <div class="my-8 p-3">
+            <h2 class="display-5">CrazyFeelings</h2>
+            <p class="lead">135ml</p>
+            <p class="lead">R$159,90</p>
+          </div>
+
+          <div class="bg-dark shadow-sm mx-auto" style="width: 100%; height: 400px; border-radius: 21px;">
+            <img src="../images/produtos/CrazyFeelings.png" style="max-width: 100%; height: 100%;">
+          </div>
+
+          <div id="comprar">
+        
+            <button id="button-comprar" class="button-buy" onclick="comprar(3)">Comprar</button>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- Produto 5 -->
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-6 px-md-5 text-center overflow-hidden">
+          <div class="my-8 p-3">
+            <h2 class="display-5">Ekos</h2>
+            <p class="lead">85ml</p>
+            <p class="lead">R$99,90</p>
+          </div>
+
+          <div class="bg-dark shadow-sm mx-auto" style="width: 100%; height: 400px; border-radius: 21px;">
+            <img src="../images/produtos/Ekos.png" style="max-width: 100%; height: 100%;">
+          </div>
+
+          <button id="button-comprar" class="button-buy" onclick="comprar(4)">Comprar</button>
+        </div>
+
+        <!-- Produto 6 -->
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-6 px-md-5 text-center overflow-hidden">
+          <div class="my-8 p-3">
+            <h2 class="display-5">Elisee</h2>
+            <p class="lead">100ml</p>
+            <p class="lead">R$139,90</p>
+          </div>
+
+          <div class="bg-dark shadow-sm mx-auto" style="width: 100%; height: 400px; border-radius: 21px;">
+            <img src="../images/produtos/Elisee.png" style="max-width: 100%; height: 100%;">
+          </div>
+
+          <button id="button-comprar" class="button-buy" onclick="comprar(5)">Comprar</button>
+        </div>
+      </div>
+
+      <!-- Produto 7 -->
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-6 px-md-5 text-center overflow-hidden">
+          <div class="my-8 p-3">
+            <h2 class="display-5">Essencial</h2>
+            <p class="lead">200ml</p>
+            <p class="lead">R$189,90</p>
+          </div>
+
+          <div class="bg-dark shadow-sm mx-auto" style="width: 100%; height: 400px; border-radius: 21px;">
+            <img src="../images/produtos/Essencial.png" style="max-width: 100%; height: 100%;">
+          </div>
+
+          <button id="button-comprar" class="button-buy" onclick="comprar(6)">Comprar</button>
+        </div>
+
+        <!-- Produto 8 -->
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-6 px-md-5 text-center overflow-hidden">
+          <div class="my-8 p-3">
+            <h2 class="display-5">Humor</h2>
+            <p class="lead">175ml</p>
+            <p class="lead">R$149,90</p>
+          </div>
+
+          <div class="bg-dark shadow-sm mx-auto" style="width: 100%; height: 400px; border-radius: 21px;">
+            <img src="../images/produtos/Humor.png" style="max-width: 100%; height: 100%;">
+          </div>
+
+          <button id="button-comprar" class="button-buy" onclick="comprar(7)">Comprar</button>
+        </div>
+      </div>
+
+      <!-- Produto 9 -->
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-6 px-md-5 text-center overflow-hidden">
+          <div class="my-8 p-3">
+            <h2 class="display-5">Hypnotic Poison</h2>
+            <p class="lead">135ml</p>
+            <p class="lead">R$169,90</p>
+          </div>
+
+          <div class="bg-dark shadow-sm mx-auto" style="width: 100%; height: 400px; border-radius: 21px;">
+            <img src="../images/produtos/HypnoticPoison.png" style="max-width: 100%; height: 100%;">
+          </div>
+
+          <button id="button-comprar" class="button-buy" onclick="comprar(8)">Comprar</button>
+        </div>
+
+        <!-- Produto 10 -->
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-6 px-md-5 text-center overflow-hidden">
+          <div class="my-8 p-3">
+            <h2 class="display-5">India Misteriosa</h2>
+            <p class="lead">200ml</p>
+            <p class="lead">R$189,90</p>
+          </div>
+
+          <div class="bg-dark shadow-sm mx-auto" style="width: 100%; height: 400px; border-radius: 21px;">
+            <img src="../images/produtos/IndiaMisteriosa.png" style="max-width: 100%; height: 100%;">
+          </div>
+
+          <button id="button-comprar" class="button-buy" onclick="comprar(9)">Comprar</button>
+        </div>
+      </div>
+
+      <!-- Produto 11 -->
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-6 px-md-5 text-center overflow-hidden">
+          <div class="my-8 p-3">
+            <h2 class="display-5">Shiraz</h2>
+            <p class="lead">125ml</p>
+            <p class="lead">R$99,90</p>
+          </div>
+
+          <div class="bg-dark shadow-sm mx-auto" style="width: 100%; height: 400px; border-radius: 21px;">
+            <img src="../images/produtos/Shiraz.png" style="max-width: 100%; height: 100%;">
+          </div>
+
+          <button id="button-comprar" class="button-buy" onclick="comprar(10)">Comprar</button>
+        </div>
+
+        <!-- Produto 12 -->
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-6 px-md-5 text-center overflow-hidden">
+          <div class="my-8 p-3">
+            <h2 class="display-5">UFloratta</h2>
+            <p class="lead">150ml</p>
+            <p class="lead">R$159,90</p>
+          </div>
+
+          <div class="bg-dark shadow-sm mx-auto" style="width: 100%; height: 400px; border-radius: 21px;">
+            <img src="../images/produtos/Floratta.png" style="max-width: 100%; height: 100%;">
+          </div>
+
+          <button class="button-buy" onclick="comprar(11)">Comprar</button>
+        </div>
+      </div>
+
+      <!-- Produto 13 -->
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-6 px-md-5 text-center overflow-hidden">
+          <div class="my-8 p-3">
+            <h2 class="display-5">UrasDom</h2>
+            <p class="lead">200ml</p>
+            <p class="lead">R$189,90</p>
+          </div>
+
+          <div class="bg-dark shadow-sm mx-auto" style="width: 100%; height: 400px; border-radius: 21px;">
+            <img src="../images/produtos/Dom.png" style="max-width: 100%; height: 100%;">
+          </div>
+
+          <button class="button-buy" onclick="comprar(12)">Comprar</button>
+        </div>
+
+        <!-- Produto 14 -->
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-6 px-md-5 text-center overflow-hidden">
+          <div class="my-8 p-3">
+            <h2 class="display-5">UrasDreams</h2>
+            <p class="lead">135ml</p>
+            <p class="lead">R$139,90</p>
+          </div>
+
+          <div class="bg-dark shadow-sm mx-auto" style="width: 100%; height: 400px; border-radius: 21px;">
+            <img src="../images/produtos/Dreams.png" style="max-width: 100%; height: 100%;">
+          </div>
+
+          <button class="button-buy" onclick="comprar(13)">Comprar</button>
+        </div>
+      </div>
+
+      <!-- Produto 15 -->
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-6 px-md-5 text-center overflow-hidden">
+          <div class="my-8 p-3">
+            <h2 class="display-5">Urasfume</h2>
+            <p class="lead">50ml</p>
+            <p class="lead">R$79,90</p>
+          </div>
+
+          <div class="bg-dark shadow-sm mx-auto" style="width: 100%; height: 400px; border-radius: 21px;">
+            <img src="../images/produtos/Urasfume.png" style="max-width: 100%; height: 100%;">
+          </div>
+
+          <button class="button-buy" onclick="comprar(14)">Comprar</button>
+        </div>
+
+        <!-- Produto 16 -->
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-6 px-md-5 text-center overflow-hidden">
+          <div class="my-8 p-3">
+            <h2 class="display-5">UrasHer</h2>
+            <p class="lead">90ml</p>
+            <p class="lead">R$119,90</p>
+          </div>
+
+          <div class="bg-dark shadow-sm mx-auto" style="width: 100%; height: 400px; border-radius: 21px;">
+            <img src="../images/produtos/UrasHer.png" style="max-width: 100%; height: 100%;">
+          </div>
+
+          <button class="button-buy" onclick="comprar(15)">Comprar</button>
+        </div>
+      </div>
+
+      <!-- Produto 17 -->
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-6 px-md-5 text-center overflow-hidden">
+          <div class="my-8 p-3">
+            <h2 class="display-5">Urasmengo</h2>
+            <p class="lead">200ml</p>
+            <p class="lead">R$189,90</p>
+          </div>
+
+          <div class="bg-dark shadow-sm mx-auto" style="width: 100%; height: 400px; border-radius: 21px;">
+            <img src="../images/produtos/Urasmengo.png" style="max-width: 100%; height: 100%;">
+          </div>
+
+          <button class="button-buy" onclick="comprar(16)">Comprar</button>
+        </div>
+
+        <!-- Produto 18 -->
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-6 px-md-5 text-center overflow-hidden">
+          <div class="my-8 p-3">
+            <h2 class="display-5">Urasvalo</h2>
+            <p class="lead">135ml</p>
+            <p class="lead">R$139,90</p>
+          </div>
+
+          <div class="bg-dark shadow-sm mx-auto" style="width: 100%; height: 400px; border-radius: 21px;">
+            <img src="../images/produtos/Urasvalo.png" style="max-width: 100%; height: 100%;">
+          </div>
+
+          <button class="button-buy" onclick="comprar(17)">Comprar</button>
+        </div>
+      </div>
+
+      <!-- Produto 19 -->
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-6 px-md-5 text-center overflow-hidden">
+          <div class="my-8 p-3">
+            <h2 class="display-5">Urinthians</h2>
+            <p class="lead">200ml</p>
+            <p class="lead">R$189,90</p>
+          </div>
+
+          <div class="bg-dark shadow-sm mx-auto" style="width: 100%; height: 400px; border-radius: 21px;">
+            <img src="../images/produtos/Urinthians.png" style="max-width: 100%; height: 100%;">
+          </div>
+
+          <button class="button-buy" onclick="comprar(18)">Comprar</button>
+        </div>
+
+        <!-- Produto 20 -->
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-6 px-md-5 text-center overflow-hidden">
+          <div class="my-8 p-3">
+            <h2 class="display-5">UrMalte</h2>
+            <p class="lead">150ml</p>
+            <p class="lead">R$169,90</p>
+          </div>
+
+          <div class="bg-dark shadow-sm mx-auto" style="width: 100%; height: 400px; border-radius: 21px;">
+            <img src="../images/produtos/UrMalte.png" style="max-width: 100%; height: 100%;">
+          </div>
+
+          <button class="button-buy" onclick="comprar(19)">Comprar</button>
+        </div>
+      </div>
+
+      <!-- Produto 21 -->
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-6 px-md-5 text-center overflow-hidden">
+          <div class="my-8 p-3">
+            <h2 class="display-5">UrZeiro</h2>
+            <p class="lead">200ml</p>
+            <p class="lead">R$189,90</p>
+          </div>
+
+          <div class="bg-dark shadow-sm mx-auto" style="width: 100%; height: 400px; border-radius: 21px;">
+            <img src="../images/produtos/UrZeiro.png" style="max-width: 100%; height: 100%;">
+          </div>
+
+          <button class="button-buy" onclick="comprar(20)">Comprar</button>
+        </div>
+
+        <!-- Produto 22 -->
+        <div class="bg-light me-md-3 pt-3 px-3 pt-md-6 px-md-5 text-center overflow-hidden">
+          <div class="my-8 p-3">
+            <h2 class="display-5">Vanilla</h2>
+            <p class="lead">100ml</p>
+            <p class="lead">R$129,90</p>
+          </div>
+
+          <div class="bg-dark shadow-sm mx-auto" style="width: 100%; height: 400px; border-radius: 21px;">
+            <img src="../images/produtos/Vanilla.png" style="max-width: 100%; height: 100%;">
+          </div>
+
+          <button class="button-buy" onclick="comprar(21)">Comprar</button>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="container-footer">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+          </a>
+          <span class="text-muted">&copy; 2021</span>
+        </div>
+
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../javascript/produto.js"></script>
+
+      
+  </body>
+
+</html>

@@ -1,0 +1,183 @@
+/*  MENU CONTENT   */
+.logo_img {
+  width: 40%;
+}
+
+.div-cabecalho{
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  background-color: seagreen;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.image-Login{
+  width: 64px;
+  height: 64px;
+}
+/*-------------------------------------------------------*/
+
+/*  CADASTRO CONTENT  */
+      
+.container-cadastro{
+  background-image: url("../images/Mountain.png");
+  height: 990px;
+  background-repeat: no-repeat;
+}
+
+.label-cadastro1{
+  width: 100%;
+  color: white;
+  margin-top: 30%;
+  font-size: 40px;
+}
+
+.label-cadastro2{
+  width: 100%;
+  color: white;
+  font-size: 40px;
+}
+
+.button-cadastro{
+  background-color: black;
+  color: white;
+  font-size: 35px;
+  margin-top: 18%;
+}
+
+/*------------------------------------*/
+/*  FEEDBACKS CLIENTES   */
+.image-feedback{
+  width: 32px;
+  height: 32px;
+}
+
+/*--------------------------------------*/
+
+/*  CARDS   */
+
+.card-img{
+  text-align: center;
+}
+
+.color{
+  background-color: #FFBC40;
+}
+
+.card-img img{
+  max-width: 100%;
+  height: 280px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.descricao{
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  padding-top: 5px;
+  height: 70px;
+}
+
+.comprar{
+  text-align: center;
+  font-weight: bold;
+  background-color: darkslateblue;
+  color: white;
+  font-family: 'Arial';
+  height: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.comprar:hover{
+  background-color: dodgerblue;
+  color: black;
+}
+
+.imageCoffee img{
+  width: 200px;
+  height: 200px;
+}
+
+.detalhes-card{
+  text-align: center;
+  margin-top: 15px;
+}
+
+/*----------------------------------------*/
+
+/*	 VÍDEO	*/
+
+.itens{
+	background-color: gray;
+}
+
+.itens h2{
+	margin-left: 1%;
+}
+
+.itens video{
+	text-align: center;
+
+	width: 98%;
+	height: 75%;
+
+	margin-left: 1%;
+}
+
+/*-----------------------------------------*/
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* rtl:end:ignore */
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  /* rtl:remove */
+  letter-spacing: -.05rem;
+}
+
+/*-------------------------*/
+.ms-3 img{
+  width: 64px;
+  height: 64px;
+}
+
+/* FOOTER  */
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}

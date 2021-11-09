@@ -1,0 +1,267 @@
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Gabriel Romenski">
+
+    <title>Urasco - Cosméticos para você</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/headers/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/paginaInicial.css" rel="stylesheet">
+
+    <script src="javascript/paginaInicial.js"></script>
+
+  </head>
+
+  <body>
+
+	  <main>
+
+	    <div class="div-cabecalho">
+	      Compre um produto e ganhe um frasco!
+	    </div>
+
+	    <!-- Container do menu
+	        LOGO    OPCOES DE MENU    ICONES
+	     -->
+	    <div class="container">
+
+	      <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+
+	        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+	          <img class="logo_img" src="images/logo.png">
+	        </a>
+
+	        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+	          <li><a href="#" class="nav-link px-2 link-secondary">Início</a></li>
+	          <li><a href="paginas/produto.html" class="nav-link px-2 link-dark">Produtos</a></li>
+	          <li><a href="paginas/carrinho.html" class="nav-link px-2 link-dark">Carrinho</a></li>
+	        </ul>
+
+	        <div class="col-md-3 text-end">
+	          <a href="paginas/login.html"><img class="image-Login" src="images/iconeLogin.png"></a>
+	          <a href="paginas/carrinho.html"><img class="image-Login" src="images/iconeCarrinho.png"></a>
+	        </div>
+
+	      </header>
+
+	    <!-- CADASTRO -->
+	    <div class="container-cadastro mb-5">
+	    	<div class="row">
+	    		<div class="cadastro text-center">
+			        <!-- <img class="image-cadastro" src="images/Mountain.png"> -->
+
+			        <label class="label-cadastro1">Você ainda não tem Cadastro?</label>
+			        <label class="label-cadastro2">Não fique fora disso! Venha garantir seu frasco!</label>
+
+			        <button class="button-cadastro" onclick="clicaCadastro()">Cadastrar</button>
+		      	</div>	
+	    	</div>
+	    </div>
+
+	    <!-- CARDS -->
+	    <div id="cards" class="row">
+
+		</div>
+
+		<div class="detalhes-card">
+		    <p><a class="btn btn-secondary" href="paginas/produto.html">Veja todos os produtos &raquo;</a></p>
+		</div>
+
+	    <!-- VIDEO -->
+	    <div class="video">
+		    <div class="container px-4 py-4" id="hanging-icons">
+		      <h2 class="pb-2 border-bottom">Vídeo</h2>
+
+		      <div class="itens">
+		      		<h2>Demonstração dos produtos</h2>
+
+			        <br>
+			        <video width="320" height="240" controls="controls" autoplay="autoplay">
+			          <source src="videos/demonstracao de perfumes.mp4" type="video/mp4">
+			          <object data="" width="500" height="460">
+			          <embed width="320" height="240" src="videos/demonstracao de perfumes.mp4">
+			          </object>
+			        </video>
+		      	</div>
+		    </div>    
+		</div>
+
+	    <!-- FEEDBACKS CLIENTES -->
+	    <div class="d-flex align-items-center p-3 my-4 rounded shadow-sm">
+	      <img class="me-3" src="images/logo.png" alt="" width="64" height="64">
+	      <div class="lh-1">
+	        <h1 class="h6 mb-0 lh-1">Urasco</h1>
+	        <small>Desde 2017</small>
+	      </div>
+	    </div>
+
+	    <div class="my-3 p-3 bg-body rounded shadow-sm">
+	      <h6 class="border-bottom pb-2 mb-0">Comentários recentes</h6>
+
+	      <!-- CLIENTE 1 -->
+	      <div class="d-flex text-muted pt-3">
+	        <img class="image-feedback" src="images/iconeLogin.png">
+
+	        <p class="pb-3 mb-0 small lh-sm border-bottom">
+	          <strong class="d-block text-gray-dark">@sebastiantortelli</strong>
+	          Adorei os perfumes e chegaram no prazo, tudo certinho e recebi meu frasco de brinde!
+	        </p>
+	      </div>
+
+	      <!-- CLIENTE 2 -->
+	      <div class="d-flex text-muted pt-3">
+	        <img class="image-feedback" src="images/iconeLogin.png">
+
+	        <p class="pb-3 mb-0 small lh-sm border-bottom">
+	          <strong class="d-block text-gray-dark">@ernestofonseca</strong>
+	          Recebi a entrega dentro do prazo e parabéns pelo suporte!
+	        </p>
+	      </div>
+
+	      <!-- CLIENTE 3 -->
+	      <div class="d-flex text-muted pt-3">
+	        <img class="image-feedback" src="images/iconeLogin.png">
+
+	        <p class="pb-3 mb-0 small lh-sm border-bottom">
+	          <strong class="d-block text-gray-dark">@andarilha</strong>
+	          Excelentes perfumes, amei ♥
+	        </p>
+	      </div>
+
+	      <!-- Veja os comentarios mais antigos -->
+	      <small class="d-block text-end mt-3">
+	        <a href="#">Todos os comentários</a>
+	      </small>
+	    </div>
+
+	    <!-- Sugestoes -->
+	    <div class="my-3 p-3 bg-body rounded shadow-sm">
+	      <h6 class="border-bottom pb-2 mb-0">Sugestões</h6>
+	      <div class="d-flex text-muted pt-3">
+	        <img class="image-feedback" src="images/iconeLogin.png">
+
+	        <!-- Sugestao 1 -->
+	        <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+	          <div class="d-flex justify-content-between">
+	            <strong class="text-gray-dark">Adam Felix da Silva Soares</strong>
+	            <a href="#">Follow</a>
+	          </div>
+	          <p>Vocês poderiam adicionar mais perfumes! Seria incrível.</p>
+	          <span class="d-block">@adamss</span>
+	        </div>
+	      </div>
+	      <div class="d-flex text-muted pt-3">
+	        <img class="image-feedback" src="images/iconeLogin.png">
+
+	        <!-- Sugestao 2 -->
+	        <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+	          <div class="d-flex justify-content-between">
+	            <strong class="text-gray-dark">Cabo Ulisses Santos Barbosa</strong>
+	            <a href="#">Follow</a>
+	          </div>
+	          <p>Vocês poderiam adicionar fragrâncias militares!</p>
+	          <span class="d-block">@cabousb</span>
+	        </div>
+	      </div>
+
+	      <div class="d-flex text-muted pt-3">
+	        <img class="image-feedback" src="images/iconeLogin.png">
+
+	        <!-- Sugestao 3 -->
+	        <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+	          <div class="d-flex justify-content-between">
+	            <strong class="text-gray-dark">John Paul Armstrong Liewitz</strong>
+	            <a href="#">Follow</a>
+	          </div>
+	          <p>Language english please.</p>
+	          <span class="d-block">@johnpaul</span>
+	        </div>
+	      </div>
+
+	      <!-- Todas as sugestoes -->
+	      <small class="d-block text-end mt-3">
+	        <a href="#">Todas as sugestões</a>
+	      </small>
+	    </div>
+
+	    <!-- CONTATO -->
+	    <div class="container px-4 py-4" id="hanging-icons">
+	      <h2 class="pb-2 border-bottom">Contatos</h2>
+	      <div class="row g-4 py-3 row-cols-1 row-cols-lg-3">
+	        <div class="col d-flex align-items-start">
+	          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+	            <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
+	          </div>
+	          <div>
+	            <h2>Endereço</h2>
+	            <p>Rua: Armando Algo no centro de Curitiba</p>
+	            <p>Nº748</p>
+	            <p>Complemento: Casa rosa na esquina com a Rua Thomas Turbano</p>
+	          </div>
+	        </div>
+	        <div class="col d-flex align-items-start">
+	          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+	            <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"/></svg>
+	          </div>
+	          <div>
+	            <h2>Telefone</h2>
+	            <p>Fixo: (41)1024-2478</p>
+	            <p>WhatsApp: (41)89963-9999</p>
+	          </div>
+	         </div>
+	        </div>
+	       </div>
+
+	     </div> <!-- Fim das divs centralizadas -->
+
+	    <!-- FOOTER -->
+	    <div class="container-footer">
+	      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+	        <div class="col-md-4 d-flex align-items-center">
+	          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+	            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+	          </a>
+	          <span class="text-muted">&copy; 2021</span>
+	        </div>
+
+	        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+	          <li class="ms-3">
+	            <a class="text-muted" href="#">
+	              <img src="images/iconeFacebook.png">
+	            </a>
+	          </li>
+
+	          <li class="ms-3">
+	            <a class="text-muted" href="#">
+	              <img src="images/iconeTwitter.png">
+	            </a>
+	          </li>
+
+	          <li class="ms-3">
+	            <a class="text-muted" href="#">
+	              <img src="images/iconePinterest.png">
+	            </a>
+	          </li>
+
+	          <li class="ms-3">
+	            <a class="text-muted" href="#">
+	              <img src="images/iconeInstagram.png">
+	            </a>
+	          </li>
+	        </ul>
+
+	      </footer>
+	    </div>
+
+	  </main>
+  
+  </body>
+</html>
